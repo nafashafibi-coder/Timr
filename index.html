@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIMEORA - Your Time, Your Priority</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div>
+      <h1>TIMEORA</h1>
+      <p>Your Time, Your Priority</p>
+    </div>
+    <span class="date" id="today"></span>
+  </header>
+
+  <main class="container">
+
+    <section class="welcome">
+      <h2>Selamat datang! 🌷</h2>
+      <p>Atur waktumu dan wujudkan harimu yang produktif.</p>
+    </section>
+
+    <section class="stats">
+      <div class="card">
+        <h2 id="totalTasks">0</h2>
+        <p>Total Tugas</p>
+      </div>
+      <div class="card">
+        <h2 id="completedTasks">0</h2>
+        <p>Selesai</p>
+      </div>
+      <div class="card">
+        <h2 id="pendingTasks">0</h2>
+        <p>Belum Selesai</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>✦ Daftar Tugas</h2>
+
+      <form id="taskForm">
+        <input id="taskTitle" type="text"
+          placeholder="Apa yang harus kamu kerjakan?" required>
+        <input id="taskDate" type="date">
+        <button type="submit">+ Tambah Tugas</button>
+      </form>
+
+      <div id="taskList"></div>
+    </section>
+
+    <section class="panel">
+      <h2>✦ Jadwal Kegiatan</h2>
+
+      <form id="scheduleForm">
+        <input id="scheduleTitle" type="text"
+          placeholder="Nama kegiatan..." required>
+        <input id="scheduleDate" type="datetime-local" required>
+        <button type="submit">+ Tambah Jadwal</button>
+      </form>
+
+      <div id="scheduleList"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>TIMEORA © 2026 | Make Your Time Meaningful</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
